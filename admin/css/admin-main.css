@@ -1,0 +1,48 @@
+body{
+    background: lightgray;
+}
+.viewDetails{
+    width: 100%;
+    
+}
+/*
+ * Sidebar
+ */
+
+ .sidebar {
+    background: #163B56;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 70px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+.sidebar ul.nav a:hover { 
+    border-left: 5px solid #075C9A;
+    padding-left: 10px;
+    background: rgb(5, 64, 105) !important;
+}
+ul.navbar-nav li{
+    padding: 4px 4px 4px 0px;
+}
+.blog{
+    width: 50%;
+}
